@@ -1,4 +1,4 @@
-package com.app;
+package com.app.controller;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +13,7 @@ public class IndexControler {
         return "Teste";
     }
 
+    /*
     @RequestMapping(value = "/nome/{nome}", method = RequestMethod.GET)
     public String index(@PathVariable String nome) {
         return "Teste: " + nome;
@@ -32,4 +33,5 @@ public class IndexControler {
     public Usuario indexDelete(@RequestBody Usuario usuario) {
         return usuario;
     }
+    */
 }
