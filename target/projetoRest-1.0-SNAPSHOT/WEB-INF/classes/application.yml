@@ -5,3 +5,9 @@ mongodb:
     database: projetorest
     username: userpadrao
     password: 123456u
+  secondary:
+    host: ds151702.mlab.com
+    port: 51702
+    database: projetorest2
+    username: userpadrao
+    password: 123456u

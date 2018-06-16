@@ -3,7 +3,6 @@ package com.app.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.TextScore;
 
 /**
  * Created by Fernando on 31/05/2018.
@@ -18,10 +17,9 @@ public class Usuario {
     private String nome;
 
     @TextIndexed
-    private  String sobrenome;
+    private String sobrenome;
 
-    @TextScore
-    private Float score;
+    private String foto;
 
     public String getNome() {
         return nome;
@@ -45,5 +43,13 @@ public class Usuario {
 
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 }

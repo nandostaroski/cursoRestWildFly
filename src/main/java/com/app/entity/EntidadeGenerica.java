@@ -4,6 +4,7 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.TextScore;
 
 import java.util.Date;
 
@@ -20,6 +21,9 @@ public class EntidadeGenerica {
 
     @LastModifiedDate
     private Date modified;
+
+    @TextScore
+    private Float score;
 
     public String getId() {
         return id;
